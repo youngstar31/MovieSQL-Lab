@@ -56,3 +56,20 @@ GROUP BY rating;
 
 
 
+
+That last query isn't very informative for ratings that only have 1 entry. Use a HAVING COUNT(*) > 1 clause to only show ratings with multiple movies showing.
+
+
+SELECT rating, MAX(imdb_score), MIN(imdb_score), AVG(imdb_score)
+FROM movietheater
+GROUP BY rating 
+HAVING COUNT(*) > 1;
+
+
+
+
+
+
+
+
+
