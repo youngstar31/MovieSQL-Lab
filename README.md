@@ -1,13 +1,13 @@
 # MovieSQL-Lab
 
-Create a query to find all movies in the Sci-Fi genre.
+## Create a query to find all movies in the Sci-Fi genre.
 
 SELECT * FROM movietheater
  WHERE genre = 'Sci-Fi';
 
 
 
-Create a query to find all films that scored at least a 6.5 on IMDB
+## Create a query to find all films that scored at least a 6.5 on IMDB
 
  SELECT * FROM movietheater
  WHERE imdb_score >= 6.5;
